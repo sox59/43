@@ -283,3 +283,26 @@ body {
     padding-bottom: 139px;
   }
 }
+
+/* Admin Pages CSS */
+.form-field {
+
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin: 0 0 16px 0;
+  border: 1px solid rgba (0, 0, 0, .09);
+  font-family: inherit;
+
+}
+
+
+.mb-big {
+
+  margin-bottom: 25px;
+
+
+
+}
