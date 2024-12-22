@@ -190,6 +190,24 @@ body {
   padding: 0 0 65px 0;
 }
 
+.site-footer .logout-text {
+
+  padding: 0;
+
+}
+
+.site-footer .logout-text button {
+
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #A6A6A6;
+
+}
+
+
+
 .list-of-pets {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
@@ -312,8 +330,8 @@ body {
   display: inline-block;
   font-size: .8rem;
   color: #999;
-
-
+  position: relative;
+  z-index: 3;
 
 
 
