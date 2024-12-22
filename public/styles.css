@@ -306,3 +306,15 @@ body {
 
 
 }
+
+.small-link {
+
+  display: inline-block;
+  font-size: .8rem;
+  color: #999;
+
+
+
+
+
+}
