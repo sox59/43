@@ -3,7 +3,7 @@ async function start() {
   const ourData = await ourPromise.json()
 
   if (ourData.success) {
-    // doing something interesting, show the pet management UI
+    console.log(ourData)
   } else {
     window.location = "/login"
   }

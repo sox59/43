@@ -8,7 +8,7 @@ const handler = async event => {
       httpOnly: true,
       path: "/",
       sameSite: "strict",
-      maxAge: 1000 * 60 * 60 * 24
+      maxAge: 60 * 60 * 24
     })
 
     return {
