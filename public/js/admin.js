@@ -4,7 +4,7 @@ async function start() {
 
   if (ourData.success) {
     console.log(ourData)
-    document.querySelector("render-here").innerHTML = ourData.pets
+    document.querySelector("#render-here").innerHTML = ourData.pets
   } else {
     window.location = "/login"
   }
