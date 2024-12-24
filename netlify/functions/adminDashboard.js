@@ -42,7 +42,7 @@ function generateHTML(p) {
     <div class="pet-card-text">
       <h3>${pet.name}</h3>
       <p class="pet-description">${pet.description}</p>
-      <div class="action-buttons"<
+      <div class="action-buttons">
       <a class="action-btn" href="#">Edit</a>
       <button class="action-btn">Delete</button>
       >/div>
