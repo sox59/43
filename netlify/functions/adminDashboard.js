@@ -45,7 +45,7 @@ function generateHTML(p) {
       <div class="action-buttons">
       <a class="action-btn" href="#">Edit</a>
       <button class="action-btn">Delete</button>
-      >/div>
+      </div>
     </div>
     <div class="pet-card-photo">
       <img src="/images/fallback.jpg" alt="A ${pet.species} named ${pet.name}">
