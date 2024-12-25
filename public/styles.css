@@ -365,7 +365,7 @@ body {
 }
 
 .add-pet-btn {
-
+  vertical-align: middle;
   text-decoration: none;
   display: inline-block;
   padding: 13px 18px;
@@ -374,5 +374,23 @@ body {
   border-radius: 20px;
   color: #FFF;
   background-color: rgb(19, 130, 19);
+
+}
+
+.add-pet-btn svg {
+
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+
+
+}
+
+.add-pet-btn:hover {
+
+  background-color: rgb(13, 105, 13);
+
+
+
 
 }
