@@ -317,6 +317,13 @@ body {
 
 }
 
+textarea.form-field {
+
+  height: 150px;
+  resize: none;
+
+}
+
 
 .mb-big {
 
