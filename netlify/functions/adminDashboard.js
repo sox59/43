@@ -7,8 +7,8 @@ const cookie = require("cookie")
 
 const handler = async event => {
 
-  const incomingCookie = cookie.parse(event.headers.cookie || "")
-  if (incomingCookie?.petadoption == "askldjasdjklfkljads123981231231230asdfjkasdfjk1230910230asdjklfakjlsd1209309123123") {
+
+  if (isAdmin(event)) {
     const client = new MongoClient(process.env.CONNECTIONSTRING)
     await client.connect()
 
