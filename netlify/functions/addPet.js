@@ -1,4 +1,5 @@
 const isAdmin = require("../../our-library/isAdmin")
+const getDbClient = require("../../our-library/getDbClient")
 
 const handler = async event => {
 
@@ -7,7 +8,8 @@ const handler = async event => {
 
   if (isAdmin(event)) {
 
-    // save into database
+    const client = await getDbClient()
+    await client.db().collection("pets").insertOne(body)
 
     return {
       statusCode: 200,
