@@ -1,5 +1,13 @@
+const sanitizeHTML = require("sanitize-html")
 const isAdmin = require("../../our-library/isAdmin")
 const getDbClient = require("../../our-library/getDbClient")
+
+function cleanUp(x) {
+  return sanitizeHTML(x, {
+    allowedTags: [],
+    allowedAttributes: {}
+  })
+}
 
 const handler = async event => {
 
@@ -7,9 +15,9 @@ const handler = async event => {
 
   let pet = {
 
-    name: body.name,
-    species: body.species,
-    description: body.description,
+    name: cleanUp(body.name),
+    species: cleanUp(body.species),
+    description: cleanUp(body.description),
     birthYear: new Date().getFullYear()
 
   }
