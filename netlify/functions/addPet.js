@@ -10,6 +10,7 @@ const handler = async event => {
 
     const client = await getDbClient()
     await client.db().collection("pets").insertOne(body)
+    client.close()
 
     return {
       statusCode: 200,
